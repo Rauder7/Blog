@@ -6,14 +6,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --serve",
     "clean": "rm -rf docs",
-    "deploy": "",
-    "deploy-subdomain": ""
+    "deploy": "npx @11ty/eleventy --pathprefix=/",
+    "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/Blog/",
+    "install": "npm install @11ty/eleventy --save-dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
   }
 }
