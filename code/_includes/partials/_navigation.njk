@@ -1,0 +1,6 @@
+<nav>
+    {%- for item in collections.page -%}
+        <a href="{{ item.url }}">{{ item.data.title }}</a>
+    {%- endfor -%}
+</nav>
+

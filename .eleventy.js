@@ -14,7 +14,9 @@ module.exports = async function(eleventyConfig) {
     return{
         dir:{
             input:"code",
-            output:"docs"
+            output:"docs",
+            includes: "_includes",
+            layouts:"_layouts"
         }
     }
 };
