@@ -1,12 +1,12 @@
 ---
 layout: layout-page
-title: blog
+title: Blog
 tags: page
 ---
 
 <h1>{{title}} PAGE</h1>
-<div>
-    {%- for post in collections.post -%}
-        <a href="{{ item.url }}">{{ item.data.title }}</a>
+<ul>
+    {%- for item in collections.post -%}
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
     {%- endfor -%}
-</div>
+</ul>
