@@ -1,6 +1,6 @@
 ---
 layout: layout-page.njk
-title: The Best Kept Secrets About javascript
+title: How the 10 Worst Fails of All Time Could Have Been Prevented
 tags: post
 description: meta descripcion del post 2
 ---
