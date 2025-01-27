@@ -1,12 +1,33 @@
 ---
 layout: layout-page
-title: Blog
+title: Notas
+description: 
 tags: page
 ---
+<!-- Container -->
+  <div class="max-w-3xl mx-auto py-10 px-5">
+    <!-- Title -->
+    <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">
+      My top JavaScript utilities, in just 
+      <span class="text-blue-600">One Line of Code!</span>
+    </h1>
 
-<h1>{{title}} PAGE</h1>
-<ul>
-    {%- for item in collections.post -%}
-        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-    {%- endfor -%}
-</ul>
+    <!-- Subtitle -->
+    <p class="text-center text-gray-700 mb-8">
+      What's your favorite one-liner in JavaScript? Here are mine. And if you're a TypeScript fan, you'll be happy to know that most of these snippets work in TypeScript too.
+    </p>
+
+    <!-- Section: Array -->
+    <section>
+      <ul class="space-y-2">
+        {%- for item in collections.post -%}
+        <li>  
+          <div class="mb-3 sm:mb-2 flex items-center space-x-2">
+            <div class="flex-1 flex flex-col sm:items-left sm:flex-row">
+              <a href="{{item.url}}" title="{{item.title}}" class="flex-1 text-xl hover:underline underline-offset-4 decoration-1 decoration-wavy text-indigo-700 visited:text-indigo-900"  >{{item.data.title}}</a>
+            </div>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+

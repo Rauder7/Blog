@@ -5,25 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{description}}">
     <script src="https://cdn.tailwindcss.com"></script> 
-    <link href="css/output.css" rel="stylesheet">
-    
+    <script src="/js/main.js"></script>
     <link rel="icon" href="/img/favicon.png">
     <title>{{title}}</title>
 </head>
 <body>
-     {% include "partials/_navigation.njk" %}
+     
         
     <main>
         {{ content | safe }}
     </main>
-    {% include "partials/_footer.njk" %}
 </body>
-<script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightElement(block);
-    });
-});
-</script>
 </html>
 
