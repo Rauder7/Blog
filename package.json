@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.0",
-    "highlight.js": "^11.10.0"
+    "highlight.js": "^11.10.0",
+    "particles.js": "^2.0.0"
   },
   "directories": {
     "doc": "docs"

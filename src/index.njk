@@ -4,35 +4,38 @@ title: Inicio
 description: meta descripcion de la pagina
 tags: page
 ---
-
-<style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 100vh;
-  background: radial-gradient(circle, #1b2735, #090a0f);
-}
-
-canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Ensure  the width */
-  height: 100%; /* Ensure canvas fully covers the height */
-}
-
-  </style>
-<canvas id="cosmosCanvas"></canvas>
+<div id="particle"></div>
 
 
-<script src="/js/background-canvas.js">
+  <!-- Contenido central (Hero Section) -->
+  <main class="h-screen flex items-center justify-center relative z-10">
+    <div class="text-center text-white">
+      <h1 class="text-5xl font-bold mb-4">¡Hola! Soy <span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white">Jeremy</span></h1>
+      <p class="text-lg mb-6">
+        Desarrollador back-end especializado en C#
+      </p>
+<button 
+  id="hover-button" 
+  class="bg-black text-white py-2 px-6 rounded-lg transition-all duration-300 hover:bg-gray-700 hover:text-gray-300 font-semibold text-lg shadow-md"
+>
+  <span id="button-text" class="transition-all duration-300">Portafolio</span>
+</button>
+    </div>
+  </main>
 
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  const button = document.getElementById("hover-button");
+  const buttonText = document.getElementById("button-text");
+
+  // Cambiar el texto y agregar tachado al pasar el mouse
+  button.addEventListener("mouseenter", () => {
+    buttonText.innerHTML = "<s>Muy Pronto</s>"; // Texto tachado correctamente
+  });
+
+  // Restaurar el texto original al quitar el mouse
+  button.addEventListener("mouseleave", () => {
+    buttonText.innerHTML = "Portafolio"; // Texto original
+  });
 </script>
