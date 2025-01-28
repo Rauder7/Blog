@@ -15,24 +15,37 @@
      
         
     <main>
-        <div id="particle"></div>
+        
+
 
 
   <!-- Contenido central (Hero Section) -->
-  <main class="h-screen flex items-center justify-center relative z-10">
-    <div class="text-center text-white">
-      <h1 class="text-5xl font-bold mb-4">¡Hola! Soy <span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white">Jeremy</span></h1>
-      <p class="text-lg mb-6">
-        Desarrollador back-end especializado en C#
-      </p>
-<button 
-  id="hover-button" 
-  class="bg-black text-white py-2 px-6 rounded-lg transition-all duration-300 hover:bg-gray-700 hover:text-gray-300 font-semibold text-lg shadow-md"
->
-  <span id="button-text" class="transition-all duration-300">Portafolio</span>
-</button>
-    </div>
-  </main>
+<!-- Contenedor de partículas -->
+<div id="particle" class="absolute inset-0"></div>
+<!-- Main -->
+<main style="position: absolute;top: 50%; left: 50%; display: block; margin: -80px 0 0 -220px;" class="flex items-center justify-center relative z-0">
+  <div class="text-center text-white">
+    <h1 class="text-5xl font-bold mb-4">
+      ¡Hola! Soy 
+      <span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] 
+        bg-cover bg-center px-4 text-white">
+        Jeremy
+      </span>
+    </h1>
+    <p class="text-lg mb-6">
+      Desarrollador back-end especializado en C#
+    </p>
+    <button 
+      id="hover-button" 
+      class="bg-black text-white py-2 px-6 rounded-lg transition-all duration-300 
+        hover:bg-gray-700 hover:text-gray-300 font-semibold text-lg shadow-md"
+    >
+      <span id="button-text" class="transition-all duration-300">Portafolio</span>
+    </button>
+  </div>
+</main>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
